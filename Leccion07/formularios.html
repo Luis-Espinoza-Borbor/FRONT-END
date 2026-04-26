@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>Registro de Usuario</h1>
+
+    <form method="post">
+        <fieldset>
+            <legend>Registro de Usuario</legend>
+            <label for="nombre">Nombre</label> <input value="Luis" placeholder="Escriba aqui su nombre" name="nombre" id="nombre" type="text" required maxlength="10" minlength="3" >
+            <br>
+            <label for="apellido">Apellido</label> <input value="Espinoza" placeholder="Escriba aqui su apellido" name="apellido" id="apellido" type="text" required maxlength="10" minlength="3">
+            <br>
+            <label for="edad">Edad:</label> <input step="10" type="number" name="edad" id="edad" min="1" max="99" >
+            <br>
+            <label for="">Fecha de nacimiento:</label> <input type="date"> <label for="">Hora de nacimiento </label> <input type="time">
+            <br>
+            <label for="">Sexo:</label> <br>
+            <label for="">Masculino</label> <input name="sexo" type="radio">
+            <label for="">Femenino</label> <input name="sexo" type="radio">
+            <br>
+            <label for="">Color favorito:</label> <input type="color">
+            <br>
+            <label for="">Musica favorita:</label> <br>
+            <label for="">Jazz</label> <input type="checkbox">
+            <label for="">Salsa Romantica</label> <input type="checkbox">
+            <label for="">Bolero</label> <input type="checkbox">
+            <br>
+            <label for="">Email:</label> <input type="email">
+            <br>
+            <label for="">Importar tu foto</label> <input type="file" accept=".jpg" >
+            <br>
+            <input type="hidden">
+            <br>
+            <label for="">Contrasena:</label> <input type="password">
+        </fieldset>
+
+        <button type="submit" > Enviar </button>
+    </form>
+    
+</body>
+</html>
