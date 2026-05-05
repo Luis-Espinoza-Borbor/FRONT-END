@@ -1,0 +1,38 @@
+*{
+    font-size: xx-large;
+}
+
+h1{
+    color: red;
+    background-color: yellow;
+}
+
+span{
+    background-color: blue;
+    color: brown;
+
+}
+
+#CSS{
+    background-color: black;
+    color: white;
+}
+
+.claseParrafo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h2, h3, h4{
+    background-color: blue;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.claseDiv{
+    background-color: black;
+    color: white;
+}
+
+.claseDiv p{
+    background-color: aqua;
+}
