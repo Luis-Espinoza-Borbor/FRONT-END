@@ -1,0 +1,32 @@
+.navbar-cine {
+    background-color: #110204 !important;
+}
+
+.btn-buscar{
+    background-color: #d4af37;
+    color: #000000;
+    border: none;
+}
+
+.btn-buscar:hover{
+    background-color: #ffc107;
+    color: #000000;
+}
+
+.input-busqueda{
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #d4af37;
+}
+
+.input-busqueda:focus{
+    background-color: #000000 !important;
+    color: #000000 !important;
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.25rem rgba(212, 175, 55, 0.25);
+}
+
+.input-busqueda::placeholder{
+    color: #6c757d !important;
+    opacity: 1 !important;
+}
