@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Ayuda en Casa | Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/favicon.jpg">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="bi bi-house-door-fill me-1"></i> Tu Ayuda en Casa
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-semibold active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="registro-trabajador.html">Trabaja con
+                            nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="contacto.html">Contacto</a></li>
+
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0 d-flex align-items-center gap-2" id="contenedorAuthNav">
+                    </li>
+                    <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+                        <button id="btnModoOscuro" class="btn btn-outline-secondary btn-sm w-100 fw-bold">🌙
+                            Oscuro</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="position-relative mt-5 pt-3">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner" style="height: 65vh; min-height: 450px;">
+                <div class="carousel-item active h-100">
+                    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1920&auto=format&fit=crop"
+                        class="d-block w-100 h-100 object-fit-cover img-filtro-oscuro" alt="Servicio de Limpieza">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1920&auto=format&fit=crop"
+                        class="d-block w-100 h-100 object-fit-cover img-filtro-oscuro" alt="Servicio de Electricidad">
+                </div>
+                <div class="carousel-item h-100">
+                    <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=1920&auto=format&fit=crop"
+                        class="d-block w-100 h-100 object-fit-cover img-filtro-oscuro" alt="Cuidado del Hogar">
+                </div>
+            </div>
+        </div>
+
+        <div class="position-absolute top-50 start-50 translate-middle w-100 z-3 px-3" style="max-width: 900px;">
+            <div class="text-center text-white mb-4">
+                <h1 class="display-3 fw-bold mb-3 sombra-texto">¿En qué podemos ayudarte hoy?</h1>
+                <p class="lead fs-4 sombra-texto">Encuentra expertos de confianza en todo Guayaquil, directo a tu
+                    puerta.</p>
+            </div>
+
+            <div class="card border-0 shadow-lg p-2 rounded-4 fondo-buscador">
+                <div class="card-body p-2">
+                    <form id="formBuscadorInicio" class="row g-2 align-items-center">
+                        <div class="col-md-5">
+                            <div class="input-group input-group-lg">
+                                <span class="input-group-text bg-transparent border-0"><i
+                                        class="bi bi-search text-muted"></i></span>
+                                <input type="text" class="form-control border-0 bg-transparent shadow-none"
+                                    placeholder="Ej. Reparar tubería...">
+                            </div>
+                        </div>
+                        <div class="col-md-4 border-start border-2 d-none d-md-block">
+                            <select
+                                class="form-select form-select-lg select-dinamico border-0 bg-transparent shadow-none"
+                                id="filtroCategoria" required>
+                                <option value="">Elige una categoría</option>
+                            </select>
+                        </div>
+                        <div class="col-md-3">
+                            <button type="submit"
+                                class="btn btn-warning btn-lg w-100 fw-bold text-dark border-0 shadow-sm"
+                                style="background-color: var(--bs-warning);">Buscar Profesional</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5 py-5">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-primary">Servicios más solicitados</h2>
+            <p class="text-muted">Soluciones rápidas y garantizadas para cada rincón de tu hogar.</p>
+        </div>
+
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4 tarjeta-hover">
+                    <div class="display-4 text-primary mb-3"><i class="bi bi-house-check"></i></div>
+                    <h4 class="fw-bold text-dark">Limpieza Doméstica</h4>
+                    <p class="text-muted small mb-4">Profesionales de confianza para dejar tu casa impecable.</p>
+                    <a href="servicios.html" class="btn btn-outline-primary mt-auto rounded-pill fw-bold">Ver
+                        profesionales</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4 tarjeta-hover">
+                    <div class="display-4 text-primary mb-3"><i class="bi bi-tools"></i></div>
+                    <h4 class="fw-bold text-dark">Gasfitería</h4>
+                    <p class="text-muted small mb-4">Solución rápida a fugas, tuberías e instalaciones.</p>
+                    <a href="servicios.html" class="btn btn-outline-primary mt-auto rounded-pill fw-bold">Ver
+                        profesionales</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm p-4 tarjeta-hover">
+                    <div class="display-4 text-primary mb-3"><i class="bi bi-person-hearts"></i></div>
+                    <h4 class="fw-bold text-dark">Niñeras</h4>
+                    <p class="text-muted small mb-4">Cuidado responsable y seguro para los más pequeños.</p>
+                    <a href="servicios.html" class="btn btn-outline-primary mt-auto rounded-pill fw-bold">Ver
+                        profesionales</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="py-5 bg-light border-top">
+        <div class="container text-center py-4">
+            <h3 class="fw-bold text-primary mb-5">Lo que dicen nuestros clientes</h3>
+
+            <div id="carouselTestimonios" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators" style="bottom: -50px;">
+                    <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="0"
+                        class="active"></button>
+                    <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselTestimonios" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner pb-4">
+                    <div class="carousel-item active">
+                        <i class="bi bi-quote d-block mb-3"></i>
+                        <p class="fs-4 fst-italic px-md-5">"Se me rompió una tubería a medianoche. Encontré un gasfitero
+                            en 10 minutos en la plataforma y llegó rapidísimo. ¡Excelente servicio en Guayaquil!"</p>
+                        <h6 class="fw-bold text-primary mt-4">— María Fernanda R.</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <i class="bi bi-quote d-block mb-3"></i>
+                        <p class="fs-4 fst-italic px-md-5">"El servicio de limpieza es excepcional. La profesional que
+                            vino fue muy puntual y detallista. Súper recomendada la aplicación."</p>
+                        <h6 class="fw-bold text-primary mt-4">— Carlos Martínez</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <i class="bi bi-quote d-block mb-3"></i>
+                        <p class="fs-4 fst-italic px-md-5">"Como trabajador independiente, esta app me ha permitido
+                            conseguir clientes de manera constante y segura. Una gran herramienta para emprender."</p>
+                        <h6 class="fw-bold text-primary mt-4">— José Luis (Electricista)</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold text-primary"><i class="bi bi-house-door-fill me-1"></i> Tu Ayuda en Casa</h5>
+                    <p class="small text-white-50">Conectando hogares con profesionales de confianza de manera rápida y
+                        segura.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><a href="nosotros.html" class="text-white-50 text-decoration-none">Quiénes
+                                Somos</a></li>
+                        <li class="mb-1"><a href="servicios.html" class="text-white-50 text-decoration-none">Ver todos
+                                los servicios</a></li>
+                        <li class="mb-1"><a href="registro-trabajador.html"
+                                class="text-white-50 text-decoration-none">Trabaja con nosotros</a></li>
+                        <li class="mb-1"><a href="contacto.html" class="text-white-50 text-decoration-none">Contacto</a>
+                        </li>
+                        <li class="mb-1"><a href="soporte.html" class="text-white-50 text-decoration-none">Preguntas
+                                frecuentes y Soporte</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">Legal y Administración</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-1"><a href="terminos.html" class="text-white-50 text-decoration-none">Términos y
+                                condiciones</a></li>
+                        <li class="mb-1"><a href="privacidad.html" class="text-white-50 text-decoration-none">Políticas
+                                de Privacidad</a></li>
+                        <li class="mt-4"><a href="admin-dashboard.html"
+                                class="text-warning text-decoration-none small"><i class="bi bi-shield-lock me-1"></i>
+                                Acceso Admin (Pruebas)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary">
+            <div class="text-center small text-white-50">
+                &copy; 2026 Tu Ayuda en Casa. Proyecto Universitario de Front End.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

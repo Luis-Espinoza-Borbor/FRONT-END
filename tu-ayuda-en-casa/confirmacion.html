@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Ayuda en Casa | Confirmacion</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/favicon.jpg">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="bi bi-house-door-fill me-1"></i> Tu Ayuda en Casa
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-lg-3 d-flex align-items-center gap-2" id="contenedorAuthNav"></li>
+                    <li class="nav-item ms-lg-2"><button id="btnModoOscuro" class="btn btn-outline-secondary btn-sm">🌙
+                            Oscuro</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container contenido-principal d-flex flex-column align-items-center justify-content-center"
+        style="min-height: 70vh;">
+
+        <div class="text-center mb-4">
+            <div class="display-1 text-success mb-3">✅</div>
+            <h1 class="fw-bold text-success">¡Pago Exitoso!</h1>
+            <h4 class="text-muted">Tu reserva ha sido confirmada.</h4>
+        </div>
+
+        <div class="card shadow border-0 text-center p-4 p-md-5 mb-4" style="max-width: 500px; width: 100%;">
+            <h5 class="fw-bold mb-3">Resumen de tu Cita</h5>
+            <p class="fs-5 mb-1">Has contratado a: <strong id="nombreConfirmado"
+                    class="text-primary">Cargando...</strong></p>
+            <p class="text-muted mb-4">Tiempo restante para tu servicio:</p>
+
+            <div class="display-4 fw-bold text-dark bg-light rounded-4 py-3 border mb-4" id="temporizadorLlegada">
+                Calculando...
+            </div>
+
+            <p class="small text-muted mb-4">
+                El profesional llegará a la fecha y hora acordada. Puedes revisar los detalles en tu Historial de
+                Servicios.
+            </p>
+
+            <a href="index.html" class="btn btn-outline-primary fw-bold w-100">Volver al Inicio</a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER PRINCIPAL -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold text-warning"><i class="bi bi-house-door-fill"></i> Tu Ayuda en Casa</h5>
+                    <p class="small text-white-50">Calidad y confianza en cada rincón de tu hogar.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small text-white-50">
+                        <li><a href="nosotros.html" class="text-white-50 text-decoration-none mb-2 d-block">Sobre
+                                nosotros</a></li>
+                        <li><a href="servicios.html" class="text-white-50 text-decoration-none mb-2 d-block">Catálogo de
+                                servicios</a></li>
+                        <li><a href="contacto.html" class="text-white-50 text-decoration-none mb-2 d-block">Centro de
+                                contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3">Información Legal</h5>
+                    <ul class="list-unstyled small text-white-50">
+                        <li><a href="terminos.html" class="text-white-50 text-decoration-none mb-2 d-block">Términos y
+                                condiciones</a></li>
+                        <li><a href="privacidad.html" class="text-white-50 text-decoration-none mb-2 d-block">Políticas
+                                de privacidad</a></li>
+                        <li class="mt-3"><a href="admin-dashboard.html"
+                                class="text-warning text-decoration-none small"><i class="bi bi-shield-lock"></i> Panel
+                                Administrativo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="opacity-25">
+            <div class="text-center small text-white-50">
+                &copy; 2026 Tu Ayuda en Casa | Soluciones Domésticas Profesionales.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

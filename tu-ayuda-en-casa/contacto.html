@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Ayuda en Casa | Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/favicon.jpg">
+</head>
+
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="bi bi-house-door-fill me-1"></i> Tu Ayuda en Casa
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-lg-3 d-flex align-items-center gap-2" id="contenedorAuthNav"></li>
+                    <li class="nav-item ms-lg-2"><button id="btnModoOscuro" class="btn btn-outline-secondary btn-sm">🌙
+                            Oscuro</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container contenido-principal my-5 pt-5 flex-grow-1">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card shadow border-0 bg-white p-4 p-md-5 rounded-4">
+                    <div class="text-center mb-4">
+                        <div class="display-4 mb-3">📬</div>
+                        <h2 class="fw-bold text-primary">Contáctanos</h2>
+                        <p class="text-muted">¿Tienes dudas, problemas con un servicio o sugerencias? Escríbenos y
+                            nuestro equipo te responderá pronto.</p>
+                    </div>
+
+                    <form id="formSugerencias">
+                        <div class="mb-3">
+                            <label for="sugNombre" class="form-label fw-bold">Nombre Completo</label>
+                            <input type="text" class="form-control" id="sugNombre" placeholder="Ingresa tu nombre"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="sugCorreo" class="form-label fw-bold">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="sugCorreo" placeholder="ejemplo@correo.com"
+                                required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="sugMensaje" class="form-label fw-bold">Tu Mensaje</label>
+                            <textarea class="form-control" id="sugMensaje" rows="5"
+                                placeholder="Escribe aquí tu consulta detallada..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 fw-bold shadow-sm py-2">Enviar
+                            Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold text-warning"><i class="bi bi-house-door-fill"></i> Tu Ayuda en Casa</h5>
+                    <p class="small text-white-50">Calidad y confianza en cada rincón de tu hogar.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small text-white-50">
+                        <li><a href="nosotros.html" class="text-white-50 text-decoration-none mb-2 d-block">Sobre
+                                nosotros</a></li>
+                        <li><a href="servicios.html" class="text-white-50 text-decoration-none mb-2 d-block">Catálogo de
+                                servicios</a></li>
+                        <li><a href="contacto.html" class="text-white-50 text-decoration-none mb-2 d-block">Centro de
+                                contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3">Información Legal</h5>
+                    <ul class="list-unstyled small text-white-50">
+                        <li><a href="terminos.html" class="text-white-50 text-decoration-none mb-2 d-block">Términos y
+                                condiciones</a></li>
+                        <li><a href="privacidad.html" class="text-white-50 text-decoration-none mb-2 d-block">Políticas
+                                de privacidad</a></li>
+                        <li class="mt-3"><a href="admin-dashboard.html"
+                                class="text-warning text-decoration-none small"><i class="bi bi-shield-lock"></i> Panel
+                                Administrativo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="opacity-25">
+            <div class="text-center small text-white-50">
+                &copy; 2026 Tu Ayuda en Casa | Soluciones Domésticas Profesionales.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Ayuda en Casa | Soporte</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/favicon.jpg">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                <i class="bi bi-house-door-fill me-1"></i> Tu Ayuda en Casa
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item ms-lg-3 d-flex align-items-center gap-2" id="contenedorAuthNav"></li>
+                    <li class="nav-item ms-lg-2"><button id="btnModoOscuro" class="btn btn-outline-secondary btn-sm">🌙
+                            Oscuro</button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container contenido-principal">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Centro de Ayuda y Soporte</h2>
+            <p class="text-muted">Encuentra respuestas rápidas o envíanos tus comentarios.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+
+                <ul class="nav nav-tabs mb-4" id="soporteTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active fw-bold" id="faq-tab" data-bs-toggle="tab"
+                            data-bs-target="#faq-pane" type="button" role="tab" aria-controls="faq-pane"
+                            aria-selected="true">
+                            Preguntas Frecuentes
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link fw-bold" id="buzon-tab" data-bs-toggle="tab"
+                            data-bs-target="#buzon-pane" type="button" role="tab" aria-controls="buzon-pane"
+                            aria-selected="false">
+                            Buzón de Sugerencias
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="soporteTabsContent">
+
+                    <div class="tab-pane fade show active" id="faq-pane" role="tabpanel" aria-labelledby="faq-tab"
+                        tabindex="0">
+                        <div class="accordion shadow-sm" id="accordionFAQ">
+
+                            <div class="accordion-item border-0 mb-2 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold collapsed bg-light" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                        aria-controls="collapseOne">
+                                        ¿Cómo me afilio como trabajador?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body text-muted">
+                                        Debes ser mayor de 18 años. Dirígete a la sección "Trabaja con nosotros", llena
+                                        el formulario con tus datos y experiencia. Un administrador revisará tu perfil y
+                                        confirmará tu identidad antes de aparecer en el catálogo.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 mb-2 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold collapsed bg-light" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        ¿Es seguro el pago con tarjeta?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body text-muted">
+                                        Totalmente. Nuestra pasarela de pagos valida rigurosamente los datos y encripta
+                                        la información para garantizar que tus transacciones estén protegidas.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item border-0 mb-2 rounded">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button fw-bold collapsed bg-light" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        ¿Puedo cancelar un servicio agendado?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionFAQ">
+                                    <div class="accordion-body text-muted">
+                                        Sí, puedes cancelar desde tu Historial de Servicios hasta 24 horas antes de la
+                                        llegada programada del profesional sin ningún costo adicional.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="buzon-pane" role="tabpanel" aria-labelledby="buzon-tab" tabindex="0">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <form id="formSugerencias">
+                                    <div class="mb-3">
+                                        <label for="sugNombre" class="form-label fw-bold">Tu Nombre</label>
+                                        <input type="text" class="form-control" id="sugNombre"
+                                            placeholder="Ingresa tu nombre" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="sugCorreo" class="form-label fw-bold">Correo Electrónico</label>
+                                        <input type="email" class="form-control" id="sugCorreo"
+                                            placeholder="ejemplo@correo.com" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="sugMensaje" class="form-label fw-bold">Mensaje o Sugerencia</label>
+                                        <textarea class="form-control" id="sugMensaje" rows="4"
+                                            placeholder="Escribe aquí tu comentario, queja o sugerencia para mejorar el sistema..."
+                                            required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100 fw-bold">Enviar Mensaje</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER PRINCIPAL -->
+    <footer class="bg-dark text-white pt-5 pb-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold text-warning"><i class="bi bi-house-door-fill"></i> Tu Ayuda en Casa</h5>
+                    <p class="small text-white-50">Calidad y confianza en cada rincón de tu hogar.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled small text-white-50">
+                        <li><a href="nosotros.html" class="text-white-50 text-decoration-none mb-2 d-block">Sobre
+                                nosotros</a></li>
+                        <li><a href="servicios.html" class="text-white-50 text-decoration-none mb-2 d-block">Catálogo de
+                                servicios</a></li>
+                        <li><a href="contacto.html" class="text-white-50 text-decoration-none mb-2 d-block">Centro de
+                                contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold mb-3">Información Legal</h5>
+                    <ul class="list-unstyled small text-white-50">
+                        <li><a href="terminos.html" class="text-white-50 text-decoration-none mb-2 d-block">Términos y
+                                condiciones</a></li>
+                        <li><a href="privacidad.html" class="text-white-50 text-decoration-none mb-2 d-block">Políticas
+                                de privacidad</a></li>
+                        <li class="mt-3"><a href="admin-dashboard.html"
+                                class="text-warning text-decoration-none small"><i class="bi bi-shield-lock"></i> Panel
+                                Administrativo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="opacity-25">
+            <div class="text-center small text-white-50">
+                &copy; 2026 Tu Ayuda en Casa | Soluciones Domésticas Profesionales.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
